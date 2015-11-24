@@ -18,7 +18,7 @@ USE `campusteca` ;
 -- Table `campusteca`.`review`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `campusteca`.`review` (
-  `idreview` INT NOT NULL,
+  `idreview` INT NOT NULL AUTO_INCREMENT,
   `idbook` INT NOT NULL,
   `iduser` INT NOT NULL,
   `rating` INT NOT NULL,

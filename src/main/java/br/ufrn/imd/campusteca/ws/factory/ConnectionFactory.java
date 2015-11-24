@@ -10,9 +10,9 @@ public class ConnectionFactory {
 	private static final String SERVER = "localhost";
 	private static final String DATABASE = "campusteca";
 	private static final String DRIVER = "com.mysql.jdbc.Driver";
-	private static final String URL = "jdbc:mysql://" + SERVER + "/" + DATABASE;
-	private static final String USER = "root";
-	private static final String PASSWORD = "root";
+	private static final String URL = "jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/" + DATABASE;
+	private static final String USER = "adminmSRM71w";
+	private static final String PASSWORD = "NIWFkY1NCtjx";
 
 	public Connection openConnection() {
 		Connection connection = null;
